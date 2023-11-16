@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: 'Idroid';
     src: url(idroid.otf) format('opentype');
@@ -12,6 +14,18 @@
     font-family: 'bebas';
     src: url(Bebas-Regular.otf) format('opentype');
 }
+:root{
+    --corPrincipal: #84E1AD;
+}
+/* variavel em css:
+:root{
+    --cor0: #c5ebd6;
+    --fonte-padrao: Arial, Verdana, Helvetica;
+
+    na hora de chamar: var(nome)
+*/
+
+
 header {
     width: 100%;
     background-image: linear-gradient(#3CD983, #195A36);
@@ -31,8 +45,10 @@ header {
 }
 
 menu {
+    
     color: white;
   margin-bottom: 0px;
+
 }
 
 .options{
@@ -71,7 +87,8 @@ section {
 }
 
 body {
-    background-color: #84E1AD;
+    background-color: var(--corPrincipal);
+    margin: 0;
 }
 
 .image {
