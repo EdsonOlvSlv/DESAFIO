@@ -25,17 +25,19 @@
     na hora de chamar: var(nome)
 */
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 header {
     width: 100%;
     background-image: linear-gradient(#3CD983, #195A36);
-    margin-bottom: -20px;
     display: grid;
 }
 
 #titulo {
     color: white;
-    margin-top: 0px;
     font-family: 'bebas', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -47,13 +49,11 @@ header {
 menu {
     
     color: white;
-  margin-bottom: 0px;
 
 }
 
 .options{
     display: inline-block;
-    padding: 10px;
     
 }
 
@@ -72,7 +72,7 @@ h3 {
     
     width: 98%;
     display: block;
-    margin: auto;
+    
 }
 
 section {
@@ -82,26 +82,26 @@ section {
     background-color: white;
     border-radius: 2px;
     box-shadow: black 1px 1px 10px 1px;
-    margin-top: 0px;
+   
     
 }
 
 body {
     background-color: var(--corPrincipal);
-    margin: 0;
 }
 
 .image {
     width: 95%;
     display: block;
     margin: auto;
+    
 }
 
 .extra {
     margin-top: 10px;
     border: 1px solid;
     background-color: #C5EBD6;
-    margin: 10px;
+    
     border-radius: 5px;
 }
 
@@ -116,8 +116,7 @@ footer {
     background-color: #1A5C38;
     color: white;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+   
     text-align: center;
 }
 
@@ -128,9 +127,6 @@ p {
 
 #video {
     background-color: #1A5C38;
-    padding: 30px;
+   
 }
 
-#table{
-    
-}
