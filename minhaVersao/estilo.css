@@ -7,6 +7,11 @@
     font-family: 'rakesly';
     src: url(rakesly\ lt.otf) format('opentype');
 }
+
+@font-face {
+    font-family: 'bebas';
+    src: url(Bebas-Regular.otf) format('opentype');
+}
 header {
     width: 100%;
     background-image: linear-gradient(#3CD983, #195A36);
@@ -17,7 +22,7 @@ header {
 #titulo {
     color: white;
     margin-top: 0px;
-    font-family: 'rakesly', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'bebas', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
