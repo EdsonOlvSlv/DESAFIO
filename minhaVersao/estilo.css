@@ -141,8 +141,10 @@ body {
 footer {
     background-color: #1A5C38;
     color: white;
-    width: 100vw;
    padding: 5px;
+}
+
+footer > p{
     text-align: center;
 }
 
