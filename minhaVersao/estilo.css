@@ -17,6 +17,7 @@
 :root{
     --corPrincipal: #84E1AD;
 }
+
 /* variavel em css:
 :root{
     --cor0: #c5ebd6;
@@ -34,6 +35,7 @@ header {
     width: 100%;
     background-image: linear-gradient(#3CD983, #195A36);
     display: grid;
+   
 }
 
 #titulo {
@@ -44,6 +46,8 @@ header {
 .header {
     color: white;
     text-align: center;
+    min-height: 100px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 menu {
@@ -54,7 +58,22 @@ menu {
 
 .options{
     display: inline-block;
-    
+    padding: 10px;
+    box-shadow: 0px 3px 9px  rgba(0, 0, 0, 0.199);
+}
+
+.options > a{
+color: white;
+padding: 10px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 5px;
+transition-duration: 0.5s;
+}
+
+.options >a:hover{
+    background-color: #2FA866;
+    color: #195A36;
 }
 
 h2 {
@@ -69,7 +88,7 @@ h3 {
     color: #377152;
    
     background-image: linear-gradient(to right, #CFEFDD, #FDFEFE);
-    
+    text-indent: 8px;
     width: 98%;
     display: block;
     
@@ -77,15 +96,28 @@ h3 {
 
 section {
     width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
     background-color: white;
     border-radius: 2px;
     box-shadow: black 1px 1px 10px 1px;
-   
-    
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
+h1{
+  margin-top: 30px; 
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+  max-width: 500px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
 body {
     background-color: var(--corPrincipal);
 }
@@ -105,28 +137,86 @@ body {
     border-radius: 5px;
 }
 
-#tituloExtra {
-    background-color: #2FA866;
-    color: white;
-    display: grid;
-    
-}
 
 footer {
     background-color: #1A5C38;
     color: white;
     width: 100vw;
-   
+   padding: 5px;
     text-align: center;
 }
 
 p {
-    text-indent: 1.5em;
+    text-indent: 30px;
+    text-align: justify;
+    margin: 15px 0px 15px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2em;
+    font-size: 1.1em;
 }
 
 #video {
     background-color: #1A5C38;
+    padding: 15px;
+    margin: 15px -20px 30px -20px;
+    
    
 }
 
+#imagep{
+    max-width: 350px;
+    margin: auto;
+}
+
+section strong{
+    color: #195A36;
+    font-weight: bold;
+    background-color: #3CD983;
+    padding: 2px 6px;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #195A36;
+    }
+
+    a:hover{
+        color:#3CD983;
+
+    }
+
+    #meuNome{
+        color: white;
+    }
+
+    #meuNome:hover{
+        background-color: #2FA866;
+        padding: 3px 9px;
+        text-decoration: underline;
+    }
+
+    aside{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #84E1AD;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.247);
+    }
+
+    aside > ul{
+        list-style-type: '\✔️\00a0\00a0';
+        list-style-position: inside;
+        columns: 2;
+    }
+
+    aside > h5{
+        background-color: #2FA866;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+        color: white;
+    }
+
+    a.externo::after{
+        content: '\1F517';
+    }
